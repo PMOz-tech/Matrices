@@ -69,10 +69,10 @@ namespace Matrices
             int rowNum = mat.Length;
             int colNum = mat[0].Length;
 
-            //if (rowNum != colNum)
-            //{
-            //    throw new ArgumentException("Gerrout");
-            //}
+            if (rowNum != colNum)
+            {
+                throw new ArgumentException("Not a square matrix");
+            }
 
             if (rowNum == 1 && colNum == 1)
             {
