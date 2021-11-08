@@ -104,7 +104,7 @@ namespace Matrices
                 }
                 else
                 {
-                    result += mat[0][col] * Determinant(GetMinor(0, col, mat));
+                    result -= mat[0][col] * Determinant(GetMinor(0, col, mat));
 
                 }
             }
